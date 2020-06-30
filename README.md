@@ -5,7 +5,7 @@ This repo is a documentation for my learning journey where you can find my learn
 - [Coretabs](https://coretabs.net/)
 - [Free Code Camp](https://www.freecodecamp.org/)
 
-## Source Files Index
+## Source Files
 
 - **Coretabs**
   - [Store Page](coretabs/store/)
@@ -16,9 +16,16 @@ This repo is a documentation for my learning journey where you can find my learn
   - [Technical Documentation](free-code-camp/01-html+css/04-technical-documentation/)
   - [Personal Portfolio](free-code-camp/01-html+css/05-personal-portfolio/)
 
-## Github Pages URL
+## Github Pages URLs
 
-https://omaronweb.github.io/learning-journey/
+- **Coretabs**
+  - [Store Page](coretabs/store/index.html)
+- **Free Code Camp**
+  - [Tribute Page](free-code-camp/01-html+css/01-tribute-page/index.html)
+  - [Survey Form](free-code-camp/01-html+css/02-survey-form/index.html)
+  - [Product Landing Page](free-code-camp/01-html+css/03-product-landing-page/index.html)
+  - [Technical Documentation](free-code-camp/01-html+css/04-technical-documentation/index.html)
+  - [Personal Portfolio](free-code-camp/01-html+css/05-personal-portfolio/index.html)
 
 ## Final note
 
