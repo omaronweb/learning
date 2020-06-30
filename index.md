@@ -1,12 +1,8 @@
 ## Coretabs
 
-### HTML + CSS
-
 1.  [Store Page](coretabs/store/index.html)
 
 ## FreeCodeCamp
-
-### HTML + CSS
 
 1.  [Tribute Page](01-html+css/01-tribute-page/index.html)
 2.  [Survey Form](01-html+css/02-survey-form/index.html)
