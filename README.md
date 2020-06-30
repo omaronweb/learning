@@ -19,16 +19,14 @@ This repo is a documentation for my learning journey where you can find my learn
 ## Github Pages
 
 - **Coretabs**
-  - [Store Page](coretabs/store/index.html)
+  - [Store Page](https://omaronweb.github.io/learning-journey/coretabs/store/index.html)
 - **Free Code Camp**
-  - [Tribute Page](free-code-camp/01-html+css/01-tribute-page/index.html)
-  - [Survey Form](free-code-camp/01-html+css/02-survey-form/index.html)
-  - [Product Landing Page](free-code-camp/01-html+css/03-product-landing-page/index.html)
-  - [Technical Documentation](free-code-camp/01-html+css/04-technical-documentation/index.html)
-  - [Personal Portfolio](free-code-camp/01-html+css/05-personal-portfolio/index.html)
+  - [Tribute Page](https://omaronweb.github.io/learning-journey/free-code-camp/01-html+css/01-tribute-page/index.html)
+  - [Survey Form](https://omaronweb.github.io/learning-journey/free-code-camp/01-html+css/02-survey-form/index.html)
+  - [Product Landing Page](https://omaronweb.github.io/learning-journey/free-code-camp/01-html+css/03-product-landing-page/index.html)
+  - [Technical Documentation](https://omaronweb.github.io/learning-journey/free-code-camp/01-html+css/04-technical-documentation/index.html)
+  - [Personal Portfolio](https://omaronweb.github.io/learning-journey/free-code-camp/01-html+css/05-personal-portfolio/index.html)
 
 ## Final note
 
-This folder will get bigger with time as I'm still learning and practicing new concepts every now and then.
-
-Thanks for being here.
+This folder will get bigger with time as I'm still learning new concepts every now and then. Thanks for your time.
