@@ -2,10 +2,10 @@
 
 1.  [Store Page](coretabs/store/index.html)
 
-## FreeCodeCamp
+## Free Code Camp
 
-1.  [Tribute Page](01-html+css/01-tribute-page/index.html)
-2.  [Survey Form](01-html+css/02-survey-form/index.html)
-3.  [Product Landing Page](01-html+css/03-product-landing-page/index.html)
-4.  [Technical Documentation](01-html+css/04-technical-documentation/index.html)
-5.  [Personal Portfolio](01-html+css/05-personal-portfolio/index.html)
+1.  [Tribute Page](free-code-camp/01-html+css/01-tribute-page/index.html)
+2.  [Survey Form](free-code-camp/01-html+css/02-survey-form/index.html)
+3.  [Product Landing Page](free-code-camp/01-html+css/03-product-landing-page/index.html)
+4.  [Technical Documentation](free-code-camp/01-html+css/04-technical-documentation/index.html)
+5.  [Personal Portfolio](free-code-camp/01-html+css/05-personal-portfolio/index.html)
