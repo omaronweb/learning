@@ -5,13 +5,13 @@ This repo is a documentation for my learning journey where you can find my learn
 - Coretabs
 - Free Code Camp
 
-## index
+## source files index
 
 - **coretabs**
-  1.  [Store Page](coretabs/store/index.html)
+  - [Store Page](coretabs/store/)
 - **free-code-camp**
-  1.  [Tribute Page](free-code-camp/01-html+css/01-tribute-page/)
-  2.  [Survey Form](free-code-camp/01-html+css/02-survey-form/)
-  3.  [Product Landing Page](free-code-camp/01-html+css/03-product-landing-page/)
-  4.  [Technical Documentation](free-code-camp/01-html+css/04-technical-documentation/)
-  5.  [Personal Portfolio](free-code-camp/01-html+css/05-personal-portfolio/)
+  - [Tribute Page](free-code-camp/01-html+css/01-tribute-page/)
+  - [Survey Form](free-code-camp/01-html+css/02-survey-form/)
+  - [Product Landing Page](free-code-camp/01-html+css/03-product-landing-page/)
+  - [Technical Documentation](free-code-camp/01-html+css/04-technical-documentation/)
+  - [Personal Portfolio](free-code-camp/01-html+css/05-personal-portfolio/)
