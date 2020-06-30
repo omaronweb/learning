@@ -1,0 +1,137 @@
+body {
+  color: #000033;
+  font-family: 'Roboto Mono', monospace;
+  max-width: 960px;
+  padding: 0;
+  font-size: 14px;
+  margin: auto;
+  display: block;
+  background: url('https://cdn-media-1.freecodecamp.org/imgr/MJAkxbh.png'), #f8f8f8;
+  ;
+}
+
+#survey-form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+  margin-top: 15px;
+}
+
+#description {
+  margin: 0px 0px 20px 0px;
+  padding-bottom: 10px;
+  color: #999;
+  border-bottom: dotted 1px #e5e5e5;
+}
+
+h1 {
+  margin-bottom: 5px;
+}
+
+select:not(:checked) {
+  font-family: 'Roboto Mono', monospace;
+  color: #333;
+}
+
+main {
+  background-color: #fff;
+  border-radius: 10px;
+  display: block;
+  padding: 50px;
+  margin: 50px;
+  box-shadow: 5px 5px 25px #e5e5e5;
+}
+
+@media only screen and (max-width: 600px) {
+  main {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 25px;
+    display: flex;
+    display: block;
+    float: left;
+    margin: 10px;
+    box-shadow: 5px 5px 25px #e5e5e5;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  main {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0;
+    box-shadow: 5px 5px 25px #e5e5e5;
+  }
+}
+
+input[type="radio"], input[type="checkbox"] {
+  margin: 5px 5px 5px 0px;
+  vertical-align: middle;
+}
+
+.hint {
+  font-size: 12px;
+}
+
+fieldset {
+  border-style: none;
+  margin-bottom: 10px;
+}
+
+textarea {
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  border-style: unset;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+fieldset label {
+  display: block;
+  font-size: 12px;
+  margin: 0;
+}
+
+::placeholder {
+  color: #999;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 12px;
+}
+
+input, select {
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f8f8f8;
+  border-style: none;
+  font-family: 'Roboto Mono', monospace;
+}
+
+select option {
+  line-height: 20px;
+  font-size: 14px;
+  font-family: 'Roboto Mono', monospace;
+}
+
+button {
+  background-color: #00ff99;
+  padding: 10px;
+  border-style: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  font-family: 'Roboto Mono', monospace;
+  transition-duration: .3s;
+}
+
+@media only screen and (min-width: 1024px){
+
+button:hover {
+  box-shadow: #00ff9991 5px 5px 10px;
+}
+  
+}

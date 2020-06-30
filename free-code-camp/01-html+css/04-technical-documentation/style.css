@@ -1,0 +1,161 @@
+:root {
+  --dark: #333;
+  --grey40: #666;
+  --grey60: #999;
+  --grey95: #f0f0f2;
+  --grey98: #fbfbfc;
+  --bluish-body: #5c5c66;
+  --bluish-headings: #2e2e33;
+  --nav: 20em;
+  --medium: 3em;
+  --small: 1em;
+  --tiny: 0.5em;
+  --fast: 0.3s;
+}
+
+/*====================
+ HTML and Body 
+ ===================*/
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--grey98);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: var(--bluish-body);
+  font-size: var(--small);
+}
+
+/*====================
+Scrollbar 
+===================*/
+::-webkit-scrollbar,
+::-webkit-scrollbar-corner {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #e5e5e5;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--grey60);
+  border-radius: var(--small);
+}
+
+/*====================
+ Headings 
+ ===================*/
+h1,
+h2 {
+  color: var(--bluish-headings);
+}
+
+/*====================
+ Nav 
+ ===================*/
+.wrapper {
+  width: var(--nav);
+  background-color: #fff;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  position: fixed;
+}
+
+nav {
+  width: calc(0.7 * var(--nav));
+  margin: var(--medium) auto;
+  position: relative;
+}
+
+.nav-link {
+  color: var(--grey40);
+  text-decoration: none;
+  transition-duration: var(--fast);
+}
+
+nav ul {
+  list-style-type: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0;
+}
+
+nav li {
+  list-style: none;
+  padding: var(--small) 0;
+}
+
+/*====================
+Main 
+ ===================*/
+
+main {
+  margin-left: var(--nav);
+  padding: var(--medium);
+}
+
+code {
+  overflow-x: auto;
+  display: block;
+  border-radius: var(--tiny);
+  background-color: var(--grey95);
+  padding: var(--small);
+  line-height: 2em;
+}
+
+/*====================
+ Media quires 
+ ===================*/
+
+/* Only show hover effect on large screens which has minimum width of 1024px*/
+
+@media only screen and (min-width: 1024px) {
+  a:hover {
+    color: #19a1e6;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    overflow-y: hidden;
+    position: relative;
+  }
+  .wrapper {
+    position: relative;
+    width: 100%;
+    max-height: 25vh;
+    border: 10px #fbfbfc solid;
+    box-sizing: border-box;
+    border-radius: var(--small);
+    text-align: center;
+    position: fixed;
+  }
+
+  nav {
+    margin: var(--small) auto;
+  }
+  main {
+    position: fixed;
+    margin: 25vh auto 0 auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+    top: 0;
+    bottom: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+    border: 10px #fbfbfc solid;
+    padding: var(--small);
+  }
+}

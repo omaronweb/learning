@@ -1,0 +1,479 @@
+/*---------------------------*
+|           INDEX            |
+*----------------------------*
+| - ROOT                     |
+| - RESETTING DEFAULT VALUES |
+| - DOCUMENT STYLES          |
+| - HEADER                   |      
+| - SECTIONS                 |      
+| - WELCOME SECTION          |
+| - PROJECTS                 |
+| - CONTACT                  |
+| - FOOTER                   |
+*----------------------------*
+|       MEDIA QUERIES        |
+*----------------------------*
+| - (min-width: 420px)       |
+| - (min-width: 768px)       |
+| - (min-width: 992px)       |
+*----------------------------*
+
+
+NOTES:
+- THIS IS A MOBILE FIRST LAYOUT THAT'S WHY THE BREAKING POINTS ARE MIN WIDTH.
+- THE STYLING FOR LARGER SCREENS ARE IN MEDIA QUERIES.
+*/
+
+/* --- root --- */
+
+:root {
+  --xsmall: 1rem;
+  --small: 2rem;
+  --medium: 3rem;
+  --large: 6rem;
+  --xlarge: 10rem;
+  --line-width: 0.25rem;
+  --white: #fff;
+  --primary: #341f97;
+  --sceondary: #ee5253;
+  --bluish-grey: #aaf;
+  --shadow-color: rgba(52, 31, 151, 0.5);
+  --shadow-spread: 0 5px 20px;
+  --shadow-shrinked: 0 5px 5px;
+}
+
+/* --- RESETTING DEFAULT VALUES --- */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
+}
+
+p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+h1,
+h2 {
+  font-size: 0em;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: normal;
+}
+
+/* --- SHARED DOCUMENT STYLES --- */
+
+* {
+  box-sizing: border-box;
+  transition-duration: 0.3s;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto Mono", monospace;
+  height: 100%;
+  font-size: var(--xsmall);
+}
+
+main {
+  margin: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+/* --- HEADER --- */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  text-align: center;
+  background-color: var(--primary);
+  box-shadow: var(--shadow-spread) var(--shadow-color);
+}
+
+.navbar a {
+  color: var(--white);
+}
+
+.navbar li {
+  display: block;
+  padding: 0 var(--small);
+  /* Used vw below so the value shrinks or grows based on the viewport width */
+  /* Also aded some rem values so it still have a size even if the screen goes extra small */
+  font-size: calc(2.25vw + 0.5rem);
+  line-height: calc(6vw + 1rem);
+}
+
+/* --- LAYOUTS --- */
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+section {
+  padding-top: var(--xlarge);
+  min-height: 100vh;
+  /* "overflow: auto" allows margins to be count, without it the button under the projects grid won't have margin*/
+  overflow: auto;
+}
+
+.section-header {
+  margin-bottom: var(--medium);
+}
+
+.section-title {
+  color: var(--primary);
+  text-align: center;
+  font-weight: 100;
+  /* Used vw below so the font size shrinks based on the viewport width so it becomes smaller on smaller devices */
+  /* Also added some rem values so it still have a size even if the screen goes extra small */
+  font-size: calc(3vw + 1.5rem);
+}
+
+.section-subtitle {
+  text-align: center;
+  font-size: calc(1vw + 1rem);
+  color: var(--bluish-grey);
+  font-weight: 100;
+}
+
+/* change background and subtitle color in the even numbered sections  */
+section:nth-child(even) {
+  background-color: var(--primary);
+}
+section:nth-child(even) .section-title {
+  color: var(--white);
+}
+
+/* --- WELCOME-SECTION --- */
+
+#welcome-section {
+  padding-top: 0;
+  min-height: 100vh;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+#welcome-section h1 {
+  background: linear-gradient(45deg, var(--primary), var(--sceondary));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold;
+  margin-top: var(--medium);
+  padding: var(--xsmall) 0;
+  /* Used vw below so the font size shrinks based on the viewport width so it becomes smaller on smaller devices */
+  /* Also aded some rem values so it still have a size even if the screen goes extra small */
+  font-size: calc(16vw + 1rem);
+  line-height: calc(12vw + 1rem);
+  text-align: center;
+}
+
+#welcome-section h2 {
+  font-weight: 100;
+  color: var(--bluish-grey);
+  /* Used vw below so the font size shrinks based on the viewport width so it becomes smaller on smaller devices */
+  /* Also aded some rem values so it still have a size even if the screen goes extra small */
+  font-size: calc(2vw + 1rem);
+  letter-spacing: calc(0.2vw + 0.2rem);
+}
+
+/* --- PROJECTS --- */
+
+.projects {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.project-tile {
+  margin-bottom: var(--xsmall);
+  display: block;
+  line-height: 0;
+}
+
+.project:last-child {
+  margin-bottom: 0;
+}
+
+.project,
+.thumbnail-container,
+.project-thumbnail {
+  /* to make the thumbnail 100% of the container*/
+  width: 100%;
+  height: 100%;
+}
+
+.project-thumbnail {
+  object-fit: cover;
+}
+
+figcaption {
+  width: 100%;
+  padding: var(--xsmall);
+  color: var(--primary);
+  background-color: var(--white);
+  text-align: center;
+  line-height: normal;
+}
+
+.button {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: var(--xsmall);
+  margin: auto;
+  margin-top: var(--xsmall);
+  text-decoration: none;
+  border-style: unset;
+  font-size: var(--xsmall);
+  font-weight: bold;
+  font-family: "Roboto Mono", monospace;
+  cursor: pointer;
+  color: var(--white);
+  background-color: var(--primary);
+  border: var(--line-width) solid var(--white);
+}
+
+/* --- CONTACT --- */
+
+.wrapper {
+  display: block;
+  height: 100%;
+}
+
+.contact-channels {
+  text-align: center;
+}
+
+.contact-channel {
+  display: block;
+  margin-bottom: var(--xsmall);
+  padding: var(--xsmall);
+}
+
+.channel-icon {
+  width: calc(10vw + 1rem);
+  height: auto;
+  fill: var(--white);
+}
+
+.channel-name {
+  font-size: calc(1vw + 1rem);
+  color: var(--white);
+  text-align: center;
+}
+
+.facebook {
+  background-color: #1778f2;
+}
+
+.github {
+  background-color: #000;
+}
+
+.twitter {
+  background-color: #00acee;
+}
+
+.email {
+  background-color: #333;
+}
+
+.phone {
+  background-color: #25d366;
+}
+
+/* --- FOOTER --- */
+
+footer {
+  color: var(--white);
+  padding: var(--small);
+  background-color: var(--primary);
+  text-align: center;
+  font-size: calc(2.25vw + 0.5rem);
+}
+
+.faded {
+  opacity: 0.7;
+  margin-top: var(--small);
+}
+
+.faded a {
+  color: var(--white);
+}
+
+@media only screen and (min-width: 420px) {
+  .navbar ul {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  section {
+    padding: var(--xsmall);
+    padding-top: calc(10vw + 1rem);
+  }
+
+  .contact-channel {
+    padding: var(--small);
+  }
+
+  footer {
+    font-size: var(--xsmall);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  section {
+    padding: var(--medium);
+    padding-top: var(--xlarge);
+  }
+  .section-title {
+    font-size: var(--medium);
+  }
+  .section-subtitle {
+    font-size: var(--small);
+  }
+
+  #welcome-section h1 {
+    margin-top: var(--xlarge);
+    font-size: var(--xlarge);
+    line-height: var(--xlarge);
+  }
+
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: var(--xsmall);
+  }
+  .project-tile {
+    border: var(--line-width) var(--white) solid;
+    /* the width and height are set to 100% to make the child scale up to 100% of the grid cell space*/
+    width: 100%;
+    height: 100%;
+  }
+  .thumbnail-container {
+    /* to contain the absolute caption below*/
+    position: relative;
+  }
+  .project-thumbnail {
+    /* to make the thumbnail goes off bounderies and fill the remaining space*/
+    object-fit: cover;
+  }
+  .project-caption {
+    /* to make the caption inside the thumbnail */
+    position: absolute;
+    bottom: 0;
+  }
+
+  .contact-channels {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .contact-channel {
+    padding: var(--small);
+    width: calc(50% - (var(--xsmall) / 2));
+  }
+  .facebook,
+  .twitter {
+    margin-right: var(--xsmall);
+  }
+  .contact-channel:last-child {
+    width: 100%;
+    margin-bottom: 0;
+  }
+  .channel-icon {
+    width: var(--medium);
+    height: auto;
+    fill: var(--white);
+  }
+}
+
+/* Below is a media query for larger screens and desktops. Here we gonna make some changes 
+along side with the hover effects because it'll probably shown with a hovering device not with finger touches */
+
+@media only screen and (min-width: 992px) {
+  .navbar ul {
+    justify-content: flex-end;
+  }
+  .navbar li {
+    font-size: var(--xsmall);
+  }
+  .navbar li:hover,
+  .navbar li:focus {
+    background-color: var(--white);
+    color: var(--primary);
+  }
+
+  .project-tile {
+    /* the hidden overflow below hides the pixels that will go off the container when scaling up the .project-thumbnail by 1.1*/
+    overflow: hidden;
+  }
+  .project-thumbnail:hover,
+  .project-thumbnail:focus {
+    transform: scale(1.1);
+  }
+  .button:hover,
+  .button:focus {
+    color: var(--primary);
+    background-color: var(--white);
+  }
+
+  .contact-channel:hover,
+  .contact-channel:focus {
+    box-shadow: var(--shadow-spread) var(--shadow-color);
+  }
+  .contact-channel:active {
+    box-shadow: var(--shadow-shrinked) var(--shadow-color);
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    align-items: flex-end;
+  }
+  .indent {
+    text-indent: var(--xsmall);
+  }
+  .faded {
+    margin: 0;
+  }
+}
