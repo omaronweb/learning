@@ -16,7 +16,7 @@ This repo is a documentation for my learning journey where you can find my learn
   - [Technical Documentation](free-code-camp/01-html+css/04-technical-documentation/)
   - [Personal Portfolio](free-code-camp/01-html+css/05-personal-portfolio/)
 
-## Github Pages URLs
+## Github Pages
 
 - **Coretabs**
   - [Store Page](coretabs/store/index.html)
