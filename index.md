@@ -9,3 +9,8 @@
 3.  [Product Landing Page](free-code-camp/01-html+css/03-product-landing-page/index.html)
 4.  [Technical Documentation](free-code-camp/01-html+css/04-technical-documentation/index.html)
 5.  [Personal Portfolio](free-code-camp/01-html+css/05-personal-portfolio/index.html)
+
+## Exercises
+
+1.  [Popup](exercises/popup.html)
+2.  [Preloader](exercises/preloader.html)
