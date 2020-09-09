@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Creating a Pop up Window</title>
+    <link rel="stylesheet" href="main.css" />
+    <style>
+      html {
+        height: 100%;
+        font-family: monospace;
+        font-size: 2rem;
+        color: white;
+      }
+      body {
+        background-color: royalblue;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+      }
+      section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        position: relative;
+      }
+      button {
+        padding: 0.5rem 1rem;
+        border-style: unset;
+        border-radius: 5rem;
+        cursor: pointer;
+        transition-duration: 0.2s;
+        border: 2px solid white;
+        font-weight: bold;
+        font-family: monospace;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        background-color: transparent;
+        color: white;
+      }
+      button:hover {
+        color: royalblue;
+        background-color: white;
+      }
+      .content {
+        text-align: center;
+        transition-duration: 0.3s;
+      }
+      .window-parent {
+        display: none;
+        position: absolute;
+        animation: scaleUp 0.2s linear;
+      }
+      .window {
+        position: relative;
+        background-color: mediumturquoise;
+        border-radius: 1rem;
+        padding: 2rem;
+        margin: 2rem;
+        font-size: 1rem;
+        color: white;
+        box-shadow: 5px 5px 30px mediumturquoise;
+      }
+      .x {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        width: 1rem;
+        height: 1rem;
+        padding: 0;
+        margin: 0;
+        border-radius: 50%;
+        color: white;
+        text-align: center;
+        font-size: 1rem;
+        line-height: 0.91rem;
+        border: 2px solid white;
+        transition-duration: 0.3s;
+        cursor: pointer;
+
+        align-items: center;
+        font-weight: normal;
+      }
+      .close:hover {
+        background-color: white;
+        color: mediumturquoise;
+      }
+      .close {
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+        border-radius: 5rem;
+        font-family: monospace;
+      }
+
+      @keyframes scaleUp {
+        0% {
+          transform: scale(0.8);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+      @keyframes scaleDown {
+        0% {
+          transform: scale(1);
+        }
+        100% {
+          transform: scale(0.8);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div id="content" class="content">
+        <h1>Click the button to pop up a window!</h1>
+        <button id="clickToPopup" type="button">
+          Click to pop-up a window
+        </button>
+      </div>
+      <div id="windowParent" class="window-parent">
+        <div class="window">
+          <div id="closeX" class="x close" draggable="true">&times;</div>
+          <p>Here is your window :)</p>
+          <button id="closeThanks" class="close">Thanks!</button>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      let windowParent = document.getElementById("windowParent");
+      let button = document.getElementById("clickToPopup");
+      let closeButtonX = document.getElementById("closeX");
+      let closeButtonThanks = document.getElementById("closeThanks");
+      let content = document.getElementById("content");
+
+      button.addEventListener("click", openPopup);
+      closeButtonX.addEventListener("click", closePopup);
+      closeButtonThanks.addEventListener("click", closePopup);
+
+      function openPopup() {
+        windowParent.style.display = "block";
+        windowParent.style.animationName = "scaleUp";
+        content.style.filter = "blur(2px)";
+      }
+
+      function closePopup() {
+        windowParent.style.animationName = "scaleDown";
+        setTimeout(() => {
+          windowParent.style.display = "none";
+        }, 200);
+        content.style.filter = "initial";
+      }
+    </script>
+  </body>
+</html>
