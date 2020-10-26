@@ -30,7 +30,7 @@ This repo is a documentation for my learning journey where you can find my learn
   - [Product Landing Page](https://omaronweb.github.io/learning-journey/free-code-camp/01-html+css/03-product-landing-page/index.html)
   - [Technical Documentation](https://omaronweb.github.io/learning-journey/free-code-camp/01-html+css/04-technical-documentation/index.html)
   - [Personal Portfolio](https://omaronweb.github.io/learning-journey/free-code-camp/01-html+css/05-personal-portfolio/index.html)
-  - **Exercises**
+- **Exercises**
   - [Popup](https://omaronweb.github.io/learning-journey/exercises/popup/index.html)
   - [Preloader](https://omaronweb.github.io/learning-journey/exercises/preloader/index.html)
   - [Slider](https://omaronweb.github.io/learning-journey/exercises/slider/index.html)
