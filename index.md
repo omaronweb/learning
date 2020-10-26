@@ -12,5 +12,6 @@
 
 ## Exercises
 
-1.  [Popup](exercises/popup.html)
-2.  [Preloader](exercises/preloader.html)
+1.  [Popup](exercises/popup/index.html)
+2.  [Preloader](exercises/preloader/index.html)
+3.  [Slider](exercises/slider/index.html)
