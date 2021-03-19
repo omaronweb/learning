@@ -370,7 +370,7 @@ img {
 .card-title {
   margin: 0;
   font-weight: bold;
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: var(--primary-dark-color);
 }
 
@@ -387,7 +387,7 @@ img {
 }
 
 .large-text {
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 .card-caption > span,
@@ -636,7 +636,7 @@ a:hover {
     margin: 0;
   }
   .stoer-container {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
   .first-group a:nth-child(3),
   .first-group a:nth-child(4) {
@@ -707,6 +707,9 @@ a:hover {
   }
   .slider-group {
     grid-template-columns: 1fr;
+  }
+  .footer a {
+    padding: 0;
   }
 }
 
