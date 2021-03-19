@@ -34,8 +34,7 @@ This repo is a documentation for my learning journey where you can find my learn
   - [Popup](https://omaronweb.github.io/learning-journey/exercises/popup/index.html)
   - [Preloader](https://omaronweb.github.io/learning-journey/exercises/preloader/index.html)
   - [Slider](https://omaronweb.github.io/learning-journey/exercises/slider/index.html)
-- - **Freelancing**
-  - [Popup](https://omaronweb.github.io/learning-journey/freelancing/waseet/index.html)
+  - [Waseet](https://omaronweb.github.io/learning-journey/freelancing/waseet/index.html)
 
 ## Final note
 
