@@ -15,3 +15,7 @@
 1.  [Popup](exercises/popup/index.html)
 2.  [Preloader](exercises/preloader/index.html)
 3.  [Slider](exercises/slider/index.html)
+
+## Freelancing
+
+1.  [Waseet](waseet/index.html)
