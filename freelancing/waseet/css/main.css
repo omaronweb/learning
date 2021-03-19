@@ -496,6 +496,7 @@ footer form {
 .mailing button {
   border-radius: 0.5rem;
   border-style: unset;
+  cursor: pointer;
 }
 
 .mailing input {
@@ -679,6 +680,19 @@ a:hover {
   }
   .card-container {
     grid-template-columns: 1fr;
+  }
+  .card-title {
+    font-size: 1.5rem;
+  }
+  .card-caption {
+    font-size: 0.75rem;
+  }
+  .card-text {
+    padding: 2rem 1rem;
+  }
+  .price {
+    font-size: 1rem;
+    padding: 0.5rem;
   }
   .section-header span {
     display: none;
