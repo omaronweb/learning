@@ -16,3 +16,6 @@
 2.  [Preloader](exercises/preloader/index.html)
 3.  [Slider](exercises/slider/index.html)
 
+## Freelance
+
+1.  [Gamefiy](freelancing/gamify/index.html)
